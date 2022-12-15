@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">UNIC</string>
+    <string name="app_name_recipe">Recipe</string>
+    <string name="app_name_ablecnc">KOLAS 검증</string>
+    <string name="app_name_labeltest">sample test</string>
+    <string name="prompt_title">Permission Requested</string>
+    <string name="prompt_camera">This application requires access to the camera in order to read Image and barcodes.</string>
+    <string name="prompt_location">In order to normally use participation in events, etc., you need to access location information.</string>
+    <string name="prompt_audio">Sound source analysis requires access to a microphone.</string>
+    <string name="prompt_external_read">To record the scan history, the SD card must have read permission.</string>
+    <string name="prompt_external_write">To record the scan history, the SD card must have write permission.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="set_title_sound">Sound</string>
+    <string name="set_title_sound_desc">Set scan result to beep sound.</string>
+    <string name="set_title_vibration">Vibration</string>
+    <string name="set_title_vibration_desc">Set the scan result to Vibrate.</string>
+    <string name="sc_setting_title">Setting</string>
+    <string name="sc_list_title">Scan List</string>
+    <string name="sc_list_delete">Delete</string>
+    <string name="sc_list_share">share</string>
+    <string name="sc_list_confirm">Ok</string>
+    <string name="sc_list_cancel">Cancel</string>
+    <string name="sc_list_all">ALL</string>
+    <string name="sc_list_not">No scan history.</string>
+    <string name="sc_list_msg_delete">Are you sure you want to delete?</string>
+    <string name="sc_list_msg_delete_all">Are you sure you want to delete all?</string>
+    <string name="shareTitle">Sent from ScanM.</string>
+    <string name="image_view">imageview</string>
+
+    <string name="flash_info_on">Flash ON</string>
+    <string name="flash_info_off">Flash OFF</string>
+    <string name="unknown_content_warning">Unrecognized content.</string>
+    <string name="scanning">Scanning</string>
+    <string name="flash_not_supported">no flash camera supported</string>
+
+    <string name="scan_guide_msg_1">Scanning may differ with the device and the surrounding environment.</string>
+    <string name="scan_guide_msg_2">Place the phone 10cm~20cm above the image to scan.</string>
+    <string name="scan_guide_msg_3">Slowly tilt your phone back and forth for easier scanning</string>
+    <string name="scan_guide_msg_4">Scanning may differ by the model of\nthe device and quality of the camera</string>
+</resources>

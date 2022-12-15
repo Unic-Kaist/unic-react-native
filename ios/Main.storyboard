@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan Camera Controller-->
+        <scene sceneID="joS-nU-c1W">
+            <objects>
+                <viewController storyboardIdentifier="ScanCamera" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="YZ6-Vu-6yG" customClass="ScanCameraController" customModule="nufutu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gyf-po-G5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="p5v-Gr-JYa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8Y-jL-OiX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-HI-gBt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKa-BJ-GCi">
+                                <rect key="frame" x="50" y="617" width="275" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dsw-HI-gBt" firstAttribute="top" secondItem="h8Y-jL-OiX" secondAttribute="top" id="Fz1-Hf-7iK"/>
+                            <constraint firstAttribute="trailing" secondItem="gKa-BJ-GCi" secondAttribute="trailing" constant="50" id="Ine-Ui-dJ5"/>
+                            <constraint firstAttribute="bottom" secondItem="dsw-HI-gBt" secondAttribute="bottom" id="KoX-zt-GRd"/>
+                            <constraint firstItem="dsw-HI-gBt" firstAttribute="trailing" secondItem="h8Y-jL-OiX" secondAttribute="trailing" id="Vfj-fd-9Di"/>
+                            <constraint firstItem="dsw-HI-gBt" firstAttribute="leading" secondItem="h8Y-jL-OiX" secondAttribute="leading" id="XXF-Gy-QE4"/>
+                            <constraint firstItem="p5v-Gr-JYa" firstAttribute="top" secondItem="gKa-BJ-GCi" secondAttribute="bottom" constant="50" id="kUk-8q-KHL"/>
+                            <constraint firstItem="gKa-BJ-GCi" firstAttribute="leading" secondItem="h8Y-jL-OiX" secondAttribute="leading" constant="50" id="lQ4-be-Jaw"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="8CF-Qr-fQ8"/>
+                    <connections>
+                        <outlet property="cameraView" destination="dsw-HI-gBt" id="wbr-vJ-k4j"/>
+                        <outlet property="lblInfoMsg" destination="gKa-BJ-GCi" id="Xds-TH-kT6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufs-FY-PFR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153.62318840579712" y="86.383928571428569"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="fYg-Ef-3Ll">
+            <objects>
+                <viewController storyboardIdentifier="wkWebViewController" id="MK8-OJ-pQh" customClass="WKWebViewController" customModule="nufutu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BRR-w0-6ju"/>
+                        <viewControllerLayoutGuide type="bottom" id="xeC-sA-7bj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UMR-Bv-MTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-na-9zl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ddf-na-9zl" firstAttribute="top" secondItem="UMR-Bv-MTP" secondAttribute="top" id="E76-35-OJZ"/>
+                            <constraint firstItem="Ddf-na-9zl" firstAttribute="trailing" secondItem="UMR-Bv-MTP" secondAttribute="trailing" id="Hry-mD-2gl"/>
+                            <constraint firstItem="Ddf-na-9zl" firstAttribute="leading" secondItem="UMR-Bv-MTP" secondAttribute="leading" id="K7I-hL-Is1"/>
+                            <constraint firstAttribute="bottom" secondItem="Ddf-na-9zl" secondAttribute="bottom" id="xtz-mQ-hrT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VcM-iX-ef1">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="WaN-Ex-bUl">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnCloseActionHandler:" destination="MK8-OJ-pQh" id="qoX-Wt-rP1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="share_30px.png" id="OCl-36-lsi">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="shareBtn:" destination="MK8-OJ-pQh" id="Y0A-XH-vDZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnBack" destination="WaN-Ex-bUl" id="sIz-9v-hUH"/>
+                        <outlet property="btnShare" destination="OCl-36-lsi" id="r7d-Q5-0Cc"/>
+                        <outlet property="mWebView" destination="Ddf-na-9zl" id="kET-b8-aST"/>
+                        <outlet property="naviToolbar" destination="VcM-iX-ef1" id="ooK-2N-Hnd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKI-ux-wld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="share_30px.png" width="30" height="30"/>
+    </resources>
+</document>

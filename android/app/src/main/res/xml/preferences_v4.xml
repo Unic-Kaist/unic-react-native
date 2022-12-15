@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:thecoder="http://ithecoder.com">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="SoundAlarm"
+        android:summary="@string/set_title_sound_desc"
+        android:title="@string/set_title_sound" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="VibrateAlarm"
+        android:summary="@string/set_title_vibration_desc"
+        android:title="@string/set_title_vibration" />
+</PreferenceScreen>

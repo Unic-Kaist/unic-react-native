@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QwB-ba-hRU" customClass="FlashLayout" customModule="nufutu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flash_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="jpL-5S-jKI">
+                    <rect key="frame" x="47" y="0.0" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="6pf-oc-3Th"/>
+                        <constraint firstAttribute="height" constant="80" id="fJJ-Fq-8Th"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-RY-MlH">
+                    <rect key="frame" x="7" y="98" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.36862745099999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Hae-aG-ner"/>
+                        <constraint firstAttribute="height" constant="30" id="Z1g-Pn-MHr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tTJ-dd-8DK"/>
+            <constraints>
+                <constraint firstItem="Vk6-RY-MlH" firstAttribute="centerX" secondItem="QwB-ba-hRU" secondAttribute="centerX" id="0aG-6n-50V"/>
+                <constraint firstAttribute="bottom" secondItem="Vk6-RY-MlH" secondAttribute="bottom" id="8W4-SZ-fqE"/>
+                <constraint firstItem="jpL-5S-jKI" firstAttribute="top" secondItem="QwB-ba-hRU" secondAttribute="top" id="BQ4-WE-fKO"/>
+                <constraint firstItem="jpL-5S-jKI" firstAttribute="centerX" secondItem="QwB-ba-hRU" secondAttribute="centerX" id="fZl-Mz-jSt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="flashInfoImage" destination="jpL-5S-jKI" id="Fxv-of-QXV"/>
+                <outlet property="flashInfoMsg" destination="Vk6-RY-MlH" id="1rm-GE-Reb"/>
+            </connections>
+            <point key="canvasLocation" x="38.399999999999999" y="111.54422788605699"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flash_off.png" width="160" height="160"/>
+    </resources>
+</document>

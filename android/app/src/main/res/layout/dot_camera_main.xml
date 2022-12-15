@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- D.O.T Scan Library -->
+        <!--<com.thecoder.scanm.service.wrapper.camera.CameraSurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true" />
+
+        <FrameLayout
+            android:id="@+id/cameraFocusContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/imgCameraFocus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/scan_target" />
+
+            <TextView
+                android:id="@+id/tvInfoMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginBottom="50dp"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </FrameLayout>
+
+        &lt;!&ndash; 카메라 flash layout &ndash;&gt;
+        <LinearLayout
+            android:id="@+id/flash_info_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="-44dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/flash_info_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/flash_info_on" />
+
+            <TextView
+                android:id="@+id/flash_info_txt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner"
+                android:padding="7dp"
+                android:text="@string/flash_info_on"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="55dp">
+
+            <ImageButton
+                android:id="@+id/flashButton"
+                android:src="@drawable/btn_flash_off"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="43dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"/>
+
+        </FrameLayout>
+
+        &lt;!&ndash; 인식 후 로딩 바 &ndash;&gt;
+        <FrameLayout
+            android:id="@+id/loading_bar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/circleDView"
+                android:src="@drawable/scanning_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent" />
+
+            &lt;!&ndash; 인식 후 메시지 &ndash;&gt;
+            <TextView
+                android:id="@+id/scanningMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scanning"
+                android:textColor="#EB4E49"
+                android:textSize="20dp"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>-->
+
+    </FrameLayout>
+
+    <!-- 알수 없는 컨텐츠 layout -->
+    <!--<FrameLayout
+        android:id="@+id/unknown_content_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/unknown_warning"
+                android:layout_width="80dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/unknown_content_warning"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_corner"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+    </FrameLayout>-->
+
+</RelativeLayout>

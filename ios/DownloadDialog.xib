@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DownloadDialog" customModule="nufutu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IZs-wn-hYy">
+                    <rect key="frame" x="10" y="64" width="220" height="4"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="File Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1n-Y6-e3w">
+                    <rect key="frame" x="10" y="10" width="220" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4d-HB-YhQ">
+                    <rect key="frame" x="10" y="99" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="HNU-44-mdQ"/>
+                        <constraint firstAttribute="height" constant="21" id="tcK-aL-tet"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBm-jc-BKN">
+                    <rect key="frame" x="180" y="99" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="dHF-hi-49c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Z4d-HB-YhQ" firstAttribute="top" secondItem="IZs-wn-hYy" secondAttribute="bottom" constant="33" id="01k-9B-xy3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dBm-jc-BKN" secondAttribute="trailing" constant="10" id="2Ec-SY-8ZK"/>
+                <constraint firstItem="E1n-Y6-e3w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="7ka-hG-5zC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E1n-Y6-e3w" secondAttribute="trailing" constant="10" id="CZf-py-uFU"/>
+                <constraint firstAttribute="trailing" secondItem="IZs-wn-hYy" secondAttribute="trailing" constant="10" id="Cfl-kR-mow"/>
+                <constraint firstItem="E1n-Y6-e3w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SMb-qP-Ey6"/>
+                <constraint firstItem="E1n-Y6-e3w" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="SeV-Gj-w3q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dBm-jc-BKN" secondAttribute="bottom" constant="10" id="aKQ-B6-MUi"/>
+                <constraint firstItem="Z4d-HB-YhQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="iYy-5B-tVo"/>
+                <constraint firstItem="IZs-wn-hYy" firstAttribute="top" secondItem="E1n-Y6-e3w" secondAttribute="bottom" constant="33" id="mIT-xE-RPg"/>
+                <constraint firstItem="IZs-wn-hYy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ozL-OI-7rS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Z4d-HB-YhQ" secondAttribute="bottom" constant="10" id="pJf-4Y-foi"/>
+                <constraint firstItem="E1n-Y6-e3w" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="z6y-ZD-Fs1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblFileCnt" destination="dBm-jc-BKN" id="8fJ-3Q-8gQ"/>
+                <outlet property="lblPercent" destination="Z4d-HB-YhQ" id="Ql7-mZ-sXi"/>
+                <outlet property="progressBar" destination="IZs-wn-hYy" id="PZ0-Gk-G7B"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="45"/>
+        </view>
+    </objects>
+</document>

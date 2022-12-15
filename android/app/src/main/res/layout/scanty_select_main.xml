@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_camera_scan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Camera Scan only"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:id="@+id/btn_sound_scan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Sound scan only"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:id="@+id/btn_double_scan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Camera+Sound Scan"
+        android:layout_margin="20dp" />
+
+</LinearLayout>
